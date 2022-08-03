@@ -1,0 +1,175 @@
+@font-face {
+	font-family: norse-bold;
+	src: url(./assets/Norse-Bold.otf);
+}
+
+html * {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	display: flex;
+	height: 100vh;
+	background-color: rgb(230, 230, 230);
+}
+
+/* ASIDE - START */
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+aside>div {
+	color: white;
+	font-family: norse-bold, sans-serif;
+	font-size: 8rem;
+	width: 35vw;
+	background-color: rgba(0, 0, 0, 0.500);
+
+	position: relative;
+	top: 300px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+aside>div>img {
+	height: 10rem;
+}
+
+aside>p {
+	margin-bottom: 1rem;
+	color: white;
+}
+
+a {
+	color: white;
+}
+
+/* ASIDE - END */
+
+/* MAIN - START */
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* topSection - START */
+h1 {
+	font-size: 1.85rem;
+}
+
+.topSection {
+	padding: 0 3rem;
+
+}
+
+.topSection h1:last-child {
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
+
+/* topSection - END */
+
+/* formSection - START */
+.formSection {
+	background-color: white;
+	padding: 1rem 3rem;
+}
+
+label {
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: rgb(99, 99, 99);
+}
+
+input {
+	border-radius: 0.2rem;
+	border: 1px solid #E5E7EB;
+	padding: 0.3rem;
+	width: max(20rem, 15vw);
+}
+
+input:focus {
+	border: 1px solid blue;
+}
+
+.inputs {
+	display: flex;
+	gap: 5rem;
+	margin: 1rem 0;
+}
+
+.inputs>p>* {
+	display: block;
+}
+
+.error {
+	border: 1px solid red;
+}
+
+.errorCode::before {
+	content: "* Passwords do not match";
+	font-size: 0.8rem;
+	color: red;
+	position: absolute;
+	margin-top: 45px;
+}
+
+/* formSection - END */
+
+/* bottomSection - START */
+.bottomSection {
+	padding: 2rem 3rem;
+}
+
+.bottomSection>button {
+	padding: 0.8rem 3rem;
+	font-weight: bold;
+	border: 0;
+	border-radius: 0.3rem;
+	background-color: #596D48;
+	color: white;
+	margin-bottom: 2rem;
+	transition: 0.2s ease-in-out;
+}
+
+.bottomSection>button:hover {
+	cursor: pointer;
+	background-color: #748365;
+}
+
+.bottomSection>button.disabledButton {
+	background-color: #748365bc;
+}
+
+.bottomSection>p {
+	font-weight: bold;
+
+}
+
+.bottomSection>p>a {
+	text-decoration: none;
+	color: #596D48;
+}
+
+.bottomSection>p>a:hover {
+	text-decoration: none;
+	color: #748365;
+}
+
+/* bottomSection - END */
+
+
+
+/* MAIN - END */

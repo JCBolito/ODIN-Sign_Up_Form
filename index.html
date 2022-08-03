@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Odin Sign Up Form</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="./script.js" defer></script>
+</head>
+
+<body>
+	<aside>
+		<div>
+			<img src="./assets/odin-lined.png" alt="Odin Project Logo">
+			ODIN
+		</div>
+		<p>
+			Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on
+			<a href="https://unsplash.com/">Unsplash</a>
+		</p>
+	</aside>
+	<main>
+		<form action="#">
+			<section class="topSection">
+				<h1>
+					This is not a real online service! You know you need something like this in your life to help you
+					realize
+					your deepest dreams. Sign up now to get started.
+				</h1>
+				<h1>
+					You know you want to.
+				</h1>
+			</section>
+			<section class="formSection">
+
+				<h1>Let's do this!</h1>
+				<div class="inputs name">
+					<p>
+						<label for="firstName">FIRST NAME</label>
+						<input type="text" name="firstName" id="firstName" required>
+					</p>
+					<p>
+						<label for="lastName">LAST NAME</label>
+						<input type="text" name="lastName" id="lastName" required>
+					</p>
+				</div>
+
+				<div class="inputs contact">
+					<p>
+						<label for="email">EMAIL</label>
+						<input type="email" name="email" id="email" required>
+					</p>
+					<p>
+						<label for="phoneNumber">PHONE NUMBER</label>
+						<input type="tel" name="phoneNumber" id="phoneNumber" required>
+					</p>
+				</div>
+
+				<div class="inputs password">
+					<p>
+						<label class="passwordLabel" for="password">PASSWORD</label>
+						<input class="passwordInput" type="password" name="password" id="password" required>
+					</p>
+					<p>
+						<label for="confirmPassword">CONFIRM PASSWORD</label>
+						<input class="passwordConfirmation" type="password" name="password" id="password" required>
+					</p>
+				</div>
+			</section>
+			<section class="bottomSection">
+				<button type="submit">Create Account</button>
+				<p>Already have an account? <a href="#">Log in</span></a>
+			</section>
+		</form>
+	</main>
+</body>
+
+</html>
